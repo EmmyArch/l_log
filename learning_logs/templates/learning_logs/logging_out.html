@@ -1,0 +1,29 @@
+{% extends "learning_logs/base.html" %}
+{% load bootstrap4 %}
+
+{% block page_header %}
+ <h2>Are you sure you want to log out?</h2>
+{% endblock page_header %}
+
+{% block content %}
+
+<form action="{% url 'users:logout' %}" method="post" class="form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% buttons %}
+    <a href="{% url 'users:logout' %}"><button name="submit" class="logout-button" >Log out</button></a>
+    {% endbuttons %}
+</form>
+
+<style>
+    .logout-button {
+        background-color: blue;
+        color: white;
+        border: none;
+        height: 36;
+        width: 105;
+        border-radius: 200px;
+        cursor: pointer;
+    }
+</style>
+{% endblock content %}
