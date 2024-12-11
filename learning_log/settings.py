@@ -99,11 +99,11 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'll_db',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'grey5050',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'PASSWORD': 'diDImvccmpQGKoWBJjTowNtGgZeCeqDf',
+        'HOST': 'autorack.proxy.rlwy.net',
+        'PORT': '28722',
     }
 }
 
